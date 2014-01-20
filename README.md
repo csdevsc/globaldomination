@@ -1,5 +1,6 @@
 Global Domination
 ================
+*created by: Stephanie Chang, Roberto Xu (@omnislash321), and Brandon Truong*
 
 An Android game developed in 24 hours at CodeDayLA with a team of three.
 
