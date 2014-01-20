@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Fight" />
+        android:text="Fight"
+        android:textSize="24dp"/>
 
     <Button
         android:id="@+id/button1"
@@ -27,23 +28,6 @@
         android:text="Back"
         android:onClick="openMain" />
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="500dp"
-        android:layout_height="50dp"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_launcher" />
-
-    <ImageButton
-        android:id="@+id/attack"
-        android:layout_width="500dp"
-        android:layout_height="250dp"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_centerVertical="true"
-        android:onClick="attackMonster"
-        android:src="@drawable/ic_launcher" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -51,7 +35,8 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="28dp"
-        android:text="HP :" />
+        android:text="HP :" 
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -59,6 +44,17 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
         android:layout_below="@+id/textView2"
-        android:text="Dmg: " />
+        android:text="Dmg: "
+        android:textSize="20dp"/>
+
+    <ImageButton
+        android:id="@+id/attack"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="56dp"
+        android:onClick="attackMonster"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

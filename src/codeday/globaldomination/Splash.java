@@ -169,7 +169,7 @@ public class Splash extends Activity {
 			float f3hp = settings.getFloat("f3hp", 500);
 			float f3dmg = settings.getFloat("f3dmg", 15);
 			float f3arm = settings.getFloat("f3arm", 20);
-			mainPlayer.f1.setValues(f3hp, f3dmg, f3arm);
+			mainPlayer.f3.setValues(f3hp, f3dmg, f3arm);
 			
 			float f4hp = settings.getFloat("f4hp", 1000);
 			float f4dmg = settings.getFloat("f4dmg", 10);

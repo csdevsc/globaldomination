@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Tech" />
+        android:text="Tech"
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/button1"
@@ -26,15 +27,6 @@
         android:layout_alignParentLeft="true"
         android:onClick="openMain"
         android:text="Back" />
-    
-    <TextView
-        android:id="@+id/money"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:text="Money $:" />
 
     <TabHost
         android:id="@android:id/tabhost"
@@ -71,7 +63,8 @@
 				        android:layout_width="match_parent"
 				        android:layout_height="match_parent"
 				        android:layout_gravity="center_horizontal"
-				        android:layout_marginTop="27dp" >
+				        android:layout_marginTop="27dp"
+				        android:scrollbars="none" >
 				
 				        <LinearLayout
 				            android:layout_width="match_parent"
@@ -404,7 +397,8 @@
 				        android:layout_width="match_parent"
 				        android:layout_height="match_parent"
 				        android:layout_gravity="center_horizontal"
-				        android:layout_marginTop="27dp"  >
+				        android:layout_marginTop="27dp"
+        				android:scrollbars="none" >
 				
 				        <LinearLayout
 				            android:layout_width="match_parent"
@@ -728,5 +722,15 @@
             </FrameLayout>
         </LinearLayout>
     </TabHost>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Money $:"
+        android:textSize="20dp" />
 
 </RelativeLayout>

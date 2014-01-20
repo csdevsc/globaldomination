@@ -81,11 +81,11 @@ public final class R {
         public static final int Armor=0x7f080031;
         public static final int Weapons=0x7f08002f;
         public static final int action_settings=0x7f08004a;
-        public static final int attack=0x7f080003;
+        public static final int attack=0x7f080004;
         public static final int button1=0x7f080001;
         public static final int fight=0x7f08002d;
         public static final int humans=0x7f08002b;
-        public static final int imageButton1=0x7f080002;
+        public static final int imageButton1=0x7f080007;
         public static final int imageButton10=0x7f080022;
         public static final int imageButton11=0x7f080033;
         public static final int imageButton12=0x7f080034;
@@ -107,7 +107,7 @@ public final class R {
         public static final int imageButton9=0x7f08001f;
         public static final int makeMoney=0x7f08002a;
         public static final int money=0x7f080006;
-        public static final int scrollView1=0x7f080007;
+        public static final int scrollView1=0x7f080005;
         public static final int scrollViewArmor=0x7f080032;
         public static final int scrollViewWeapons=0x7f080030;
         public static final int splashscreen=0x7f08002e;
@@ -123,7 +123,7 @@ public final class R {
         public static final int textView17=0x7f08001b;
         public static final int textView18=0x7f08001d;
         public static final int textView19=0x7f08001e;
-        public static final int textView2=0x7f080004;
+        public static final int textView2=0x7f080002;
         public static final int textView20=0x7f080020;
         public static final int textView21=0x7f080021;
         public static final int textView22=0x7f080023;
@@ -134,7 +134,7 @@ public final class R {
         public static final int textView27=0x7f080028;
         public static final int textView28=0x7f080029;
         public static final int textView29=0x7f080036;
-        public static final int textView3=0x7f080005;
+        public static final int textView3=0x7f080003;
         public static final int textView30=0x7f080038;
         public static final int textView31=0x7f080039;
         public static final int textView32=0x7f08003b;

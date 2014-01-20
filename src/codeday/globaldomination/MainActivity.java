@@ -13,6 +13,8 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	
 	TextView moneyText;
+	TextView clickMoney;
+	TextView timeMoney;
 	Player mainPlayer = new Player();
 	boolean keepGoing;
 	
@@ -21,6 +23,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		moneyText = (TextView) findViewById(R.id.money);
+		clickMoney = (TextView) findViewById(R.id.textView2);
+		timeMoney = (TextView) findViewById(R.id.textView3);
 		
 		Intent intent = getIntent();
 		
@@ -37,6 +41,8 @@ public class MainActivity extends Activity {
 	                    public void run() {
 	                    	mainPlayer.addMoneySec(30);
 	                    	moneyText.setText("Money $: " + String.format("%.2f%n", mainPlayer.getMoney()));
+	                    	clickMoney.setText("Click $: " + String.format("%.2f%n", mainPlayer.getIncome()));
+	                    	timeMoney.setText("Time $: " + String.format("%.2f%n", mainPlayer.getIncome()*0.167));
 	                    	
 	                    	if(mainPlayer.getTime() == 5)
 	                    	{
@@ -88,6 +94,8 @@ public class MainActivity extends Activity {
 			{
 				mainPlayer.addMoney(mainPlayer.getIncome());
 				moneyText.setText("Money $: " + String.format("%.2f%n", mainPlayer.getMoney()));
+				clickMoney.setText("Click $: " + String.format("%.2f%n", mainPlayer.getIncome()));
+            	timeMoney.setText("Time $: " + String.format("%.2f%n", mainPlayer.getIncome()*0.167));
 				
 			}  
 		});  

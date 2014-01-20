@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
-    
+    tools:context=".MainActivity" >  
+         
     <ImageButton
         android:id="@+id/makeMoney"
         android:layout_width="500dp"
@@ -18,42 +18,70 @@
         android:src="@drawable/ic_money" 
         android:onClick="gainMoney"/>
 
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Money $:"
+        android:textSize="24dp" />
     
+			<LinearLayout
+			   android:layout_width="fill_parent"
+			   android:layout_height="fill_parent"
+			   android:orientation="horizontal"
+			   android:layout_marginTop="70dp"
+			   android:weightSum="1" >
+			   
+				<TextView
+				    android:id="@+id/textView2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="0.5"
+				    android:gravity="left"
+				    android:text="$: 1234567890" />
+				
+				<TextView
+				    android:id="@+id/textView3"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="0.5"
+				    android:gravity="left"
+				    android:text="#: 1234"/>
+				
+			 </LinearLayout>
+        
+    
+
     <ImageButton
         android:id="@+id/humans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/makeMoney"
-        android:layout_alignTop="@+id/tech"
-        android:src="@drawable/ic_humans"
-        android:onClick="openHumans" />
-    
+        android:layout_alignParentBottom="true"
+        android:onClick="openHumans"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_humans" />
+
     <ImageButton
         android:id="@+id/tech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/makeMoney"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:src="@drawable/ic_tech"
-        android:onClick="openTech" />
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/humans"
+        android:onClick="openTech"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/ic_tech" />
 
     <ImageButton
         android:id="@+id/fight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/makeMoney"
-        android:layout_alignTop="@+id/tech"
-        android:src="@drawable/ic_fight"
-        android:onClick="openLevels" />
-
-    <TextView
-        android:id="@+id/money"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/makeMoney"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="72dp"
-        android:text="Money $:" />
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tech"
+        android:onClick="openLevels"
+        android:src="@drawable/ic_fight" />
 
 </RelativeLayout>
